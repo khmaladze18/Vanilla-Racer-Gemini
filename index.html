@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VelocityJS | Vanilla 2D Racing Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+
+</head>
+
+<body>
+
+    <div id="game-container">
+        <div id="main-menu" class="ui-screen">
+            <div class="logo-area">
+                <h1>CAR<span>RACING</span></h1>
+                <p>Game</p>
+            </div>
+            <button id="start-btn" class="menu-btn">START RACE</button>
+        </div>
+
+        <canvas id="game-canvas"></canvas>
+
+        <div id="ui-layer">
+            <div id="countdown-overlay" class="ui-screen hidden">
+                <div class="lights-box">
+                    <div class="light" id="light-1"></div>
+                    <div class="light" id="light-2"></div>
+                    <div class="light" id="light-3"></div>
+                </div>
+                <h1 id="countdown-text">READY?</h1>
+            </div>
+
+            <div id="hud" class="ui-screen hidden">
+                <button id="exit-btn" class="exit-btn">EXIT</button>
+
+                <div class="speedometer">
+                    <span id="speed-val">0</span> <small>KM/H</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
